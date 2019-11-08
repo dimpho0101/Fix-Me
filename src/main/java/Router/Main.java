@@ -14,6 +14,7 @@ class BrokerConnection extends Thread{
             System.out.println("Client is connected on Broker");
             BufferedReader x = new BufferedReader(new InputStreamReader(s.getInputStream()));
             String str = x.readLine();
+
             System.out.println( id + " Says: " + str);
         } catch (Exception e ) {}
     }
